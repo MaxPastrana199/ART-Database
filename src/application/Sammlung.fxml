@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<SplitPane dividerPositions="0.3173777315296566" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="963.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SammlungController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <TableView fx:id="table" layoutY="138.0" prefHeight="200.0" prefWidth="301.0">
+              <columns>
+                <TableColumn fx:id="column1" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="column2" prefWidth="225.0" text="Name" />
+              </columns>
+            </TableView>
+            <Button layoutX="14.0" layoutY="347.0" mnemonicParsing="false" onAction="#BackToBenutzerMenue" text="Zurueck" />
+            <TextField fx:id="suche" layoutX="14.0" layoutY="53.0" promptText="Name der Sammlung" />
+            <Button layoutX="14.0" layoutY="87.0" mnemonicParsing="false" onAction="#searchSammlung" text="Suche" />
+            <Button layoutX="73.0" layoutY="87.0" mnemonicParsing="false" onAction="#sucheAbbrechen" text="Abbrechen" />
+            <Label layoutX="14.0" layoutY="14.0" text="Benutzer:" />
+            <Label fx:id="userLbl" layoutX="75.0" layoutY="14.0" text="Label" />
+            <Button layoutX="163.0" layoutY="87.0" mnemonicParsing="false" onAction="#detailsSammlung" text="Details" />
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <TableView fx:id="detailtable" layoutX="8.0" layoutY="7.0" prefHeight="263.0" prefWidth="636.0">
+              <columns>
+                <TableColumn fx:id="det1" prefWidth="191.0" text="Kunstwerk" />
+                <TableColumn fx:id="det2" prefWidth="139.0" text="Anfangsdatum" />
+                  <TableColumn fx:id="det3" prefWidth="104.0" text="Enddatum" />
+                  <TableColumn fx:id="det4" prefWidth="193.0" text="Gebaeude" />
+              </columns>
+            </TableView>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

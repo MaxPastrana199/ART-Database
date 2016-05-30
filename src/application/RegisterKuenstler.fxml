@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="404.0" prefWidth="376.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.RegisterKuenstlerController">
+   <children>
+      <Button layoutX="108.0" layoutY="350.0" mnemonicParsing="false" onAction="#BackToLogin" text="Zurueck" />
+      <TextField fx:id="benutzername" focusTraversable="false" layoutX="108.0" layoutY="50.0" promptText="Benutzername" />
+      <TextField fx:id="vorname" focusTraversable="false" layoutX="108.0" layoutY="82.0" promptText="Vorname" />
+      <TextField fx:id="name" focusTraversable="false" layoutX="108.0" layoutY="114.0" promptText="Name" />
+      <TextField fx:id="land" focusTraversable="false" layoutX="108.0" layoutY="145.0" promptText="Land" />
+      <TextField fx:id="stadt" focusTraversable="false" layoutX="108.0" layoutY="175.0" promptText="Stadt" />
+      <TextField fx:id="strasse" focusTraversable="false" layoutX="108.0" layoutY="208.0" promptText="Strasse" />
+      <TextField fx:id="nummer" focusTraversable="false" layoutX="108.0" layoutY="241.0" promptText="Hausnummer" />
+      <TextField fx:id="mail" focusTraversable="false" layoutX="108.0" layoutY="274.0" promptText="Email" />
+      <TextField fx:id="passwort" focusTraversable="false" layoutX="108.0" layoutY="307.0" promptText="Passwort" />
+      <Button layoutX="189.0" layoutY="350.0" mnemonicParsing="false" onAction="#saveData" text="Registrieren" />
+      <Label fx:id="warnung" layoutX="136.0" layoutY="6.0" />
+      <Label fx:id="warnung2" layoutX="136.0" layoutY="23.0" />
+   </children>
+</AnchorPane>
